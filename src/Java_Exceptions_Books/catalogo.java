@@ -53,6 +53,15 @@ public class catalogo {
 		System.out.println("Inserisci l'autore del libro = ");
 		Array[2] =s.nextLine();
 		
+		while (Array[2] == null || Array[2].isEmpty()) {
+			
+			if (Array[2] == null || Array[2].isEmpty()) {
+			    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
+			    Array[2] = s.nextLine();
+			}
+		
+		}
+		
 		//chiedo editore
 		System.out.println("Inserisci l'editore del libro = ");
 		Array[3] =s.nextLine();
