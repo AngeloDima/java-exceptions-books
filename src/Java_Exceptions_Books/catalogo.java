@@ -11,6 +11,7 @@ public class catalogo {
 		String[] Array = new String[4];
 		
 		
+		
 		// TODO Auto-generated method stub
 		
 		
@@ -25,15 +26,26 @@ public class catalogo {
 		
 		while (Array[0] == null || Array[0].isEmpty()) {
 			
-		if (Array[0] == null || Array[0].isEmpty()) {
-		    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
-		    Array[0] = s.nextLine();
-		 }
+			if (Array[0] == null || Array[0].isEmpty()) {
+			    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
+			    Array[0] = s.nextLine();
+			}
+		
 		}
 		
 		//chiedo pagine
 		System.out.println("Inserisci le pagine del libro = ");
 		Array[1] =s.nextLine();
+		
+		while (true) {
+            try {
+                int pageCount = Integer.parseInt(Array[1]);
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Devi inserire un NUMERO non lettere");
+                Array[1] = s.nextLine();
+            }
+        }
 		
 		
 		
