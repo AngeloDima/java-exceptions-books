@@ -12,18 +12,26 @@ public class catalogo {
 		
 		
 		// TODO Auto-generated method stub
-		libro book = new libro ("titolo", 30, "Autore", "Editore");
+		
+		
 		
 		
 		Scanner s = new Scanner (System.in);
 		
 		//chiedo titolo
 		System.out.println("Inserisci il titolo del libro = ");
-		Array[0] =s.nextLine();
+		
+		Array[0] = s.nextLine();
+		if (Array[0] == null || Array[0].isEmpty()) {
+		    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
+		    Array[0] = s.nextLine();
+		    
+		}
 		
 		//chiedo pagine
 		System.out.println("Inserisci le pagine del libro = ");
 		Array[1] =s.nextLine();
+		
 		
 		//chiedo autore
 		System.out.println("Inserisci l'autore del libro = ");
