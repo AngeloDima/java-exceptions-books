@@ -22,15 +22,19 @@ public class catalogo {
 		System.out.println("Inserisci il titolo del libro = ");
 		
 		Array[0] = s.nextLine();
+		
+		while (Array[0] == null || Array[0].isEmpty()) {
+			
 		if (Array[0] == null || Array[0].isEmpty()) {
 		    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
 		    Array[0] = s.nextLine();
-		    
+		 }
 		}
 		
 		//chiedo pagine
 		System.out.println("Inserisci le pagine del libro = ");
 		Array[1] =s.nextLine();
+		
 		
 		
 		//chiedo autore
