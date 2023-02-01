@@ -11,7 +11,6 @@ public class catalogo {
 		String[] Array = new String[4];
 		
 		
-		
 		// TODO Auto-generated method stub
 		
 		
@@ -23,7 +22,7 @@ public class catalogo {
 		System.out.println("Inserisci il titolo del libro = ");
 		
 		Array[0] = s.nextLine();
-		
+		int i = 0;
 		while (Array[0] == null || Array[0].isEmpty()) {
 			
 			if (Array[0] == null || Array[0].isEmpty()) {
@@ -52,10 +51,9 @@ public class catalogo {
 		//chiedo autore
 		System.out.println("Inserisci l'autore del libro = ");
 		Array[2] =s.nextLine();
-		
-		while (Array[2] == null || Array[2].isEmpty()) {
+		while (Array[2] == null || Array[2].isEmpty() || i < Array.length && (Array[2] == null)) {
 			
-			if (Array[2] == null || Array[2].isEmpty()) {
+			if (Array[2] == null || Array[2].isEmpty() || i < Array.length && (Array[2] == null) ) {
 			    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
 			    Array[2] = s.nextLine();
 			}
@@ -66,7 +64,7 @@ public class catalogo {
 		System.out.println("Inserisci l'editore del libro = ");
 		Array[3] =s.nextLine();
 		
-		while (Array[3] == null || Array[3].isEmpty()) {
+		while (Array[3] == null || Array[2].isEmpty()) {
 			
 			if (Array[3] == null || Array[3].isEmpty()) {
 			    System.out.println("Non puoi lasciare il campo vuoto  RIPROVA");
